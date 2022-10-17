@@ -5,15 +5,19 @@ function handlePergunta(event) {
   const pergunta = event.currentTarget;
   const controls = pergunta.getAttribute("aria-controls");
   const resposta = document.getElementById(controls);
-  dt.forEach((e) => {
-    e.removeAttribute("aria-expanded", true);
+
+  dt.forEach((element) => {
+    if (element !== pergunta) {
+      element.removeAttribute("aria-expanded", true);
+    }
   });
-  dd.forEach((e) => {
-    e.classList.remove("on");
+  dd.forEach((element) => {
+    if (element !== resposta) {
+      element.classList.remove("on");
+    }
   });
   resposta.classList.toggle("on");
   resposta.classList.add("yes");
-
   const on = resposta.classList.contains("on");
   pergunta.setAttribute("aria-expanded", on);
 }
