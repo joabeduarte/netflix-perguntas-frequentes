@@ -27,11 +27,6 @@ form {
   margin: 80px auto;
 }
 
-@media (max-width: 850px) {
-  .perguntas {
-  }
-}
-
 /* primeiro título */
 
 .perguntas > h1 {
@@ -50,6 +45,7 @@ form {
   gap: 10px;
   text-align: center;
 }
+
 .perguntas-lista div {
 }
 /* lista pergunta */
@@ -124,11 +120,47 @@ form {
   background-color: #f40612;
   font-size: 1.165rem;
   color: #fff;
+  border-radius: 3px;
 }
 
 @media (max-width: 800px) {
+  body {
+    padding: 5px;
+  }
+  .perguntas > h1 {
+    font-size: 1.3em;
+  }
+  .perguntas-lista {
+    font-size: 0.875rem;
+  }
+  .perguntas-lista dt {
+    padding: 10px 20px;
+  }
+  .perguntas-lista dd {
+
+    padding: 10px 20px;
+
+  }
+  .perguntas-lista dt svg {
+    width: 15px;
+  }
+  .form h1 {
+    font-size: 0.887rem;
+    padding: 5px 10px;
+  }
+  .email-form {
+    flex-direction: column;
+  }
+  .email-form input {
+    width: 350px;
+    margin: 0 auto;
+    padding: 0 7px;
+  }
   .button {
     margin: 0 auto;
     margin-top: 20px;
+    width: 110px;
+    height: 40px;
+    font-size: 0.975rem;
   }
 }
