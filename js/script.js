@@ -5,9 +5,6 @@ function handlePergunta(event) {
   const pergunta = event.currentTarget;
   const controls = pergunta.getAttribute("aria-controls");
   const resposta = document.getElementById(controls);
-  dt.forEach((e) => {
-    e.setAttribute("aria-expanded", false);
-  });
   dd.forEach((e) => {
     e.classList.remove("on");
   });
@@ -21,3 +18,7 @@ function handleDt(pergunta) {
 }
 
 dt.forEach(handleDt);
+
+// button
+
+document.querySelector(".button").disabled = true;
