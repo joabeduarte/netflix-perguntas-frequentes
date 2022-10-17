@@ -61,6 +61,7 @@ form {
   justify-content: space-between;
   text-align: left;
   cursor: pointer;
+  margin-bottom: 1px;
 }
 
 .perguntas-lista dt svg {

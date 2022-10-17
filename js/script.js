@@ -9,6 +9,8 @@ function handlePergunta(event) {
     e.classList.remove("on");
   });
   resposta.classList.toggle("on");
+  resposta.classList.add("yes");
+
   const on = resposta.classList.contains("on");
   pergunta.setAttribute("aria-expanded", on);
 }
